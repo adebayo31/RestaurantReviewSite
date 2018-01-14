@@ -1,11 +1,6 @@
 import React, { Component } from 'react';
 
 class Comments extends Component {
-  constructor(props){
-      super(props);
-  }
-
-
   render() {
       let display = [];
       let count = this.props.stars;

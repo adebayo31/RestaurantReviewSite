@@ -54,11 +54,10 @@ class App extends Component {
         this.changeRestaurants = this.changeRestaurants.bind(this);
     }
 
-
     changeRestaurants(event){
         this.setState({
-            physical: event
-        })
+            restaurants: event
+        });
         console.log("changeRestaurants", event);
     }
 
@@ -83,11 +82,11 @@ class App extends Component {
             </div>
             <div className="row">
                 <div className="col-sm-12">
-                    <div className="col-sm-8">
-                        <div><MapContainer /></div>
+                    <div className="col-sm-9">
+                        <MapContainer />
                     </div>
-                    <div className="col-sm-4">
-                        <FilterRating/>
+                    <div className="col-sm-3">
+                        <FilterRating pac-input="getPacInput"/>
                         <List restaurants={this.state.restaurants}/>
                     </div>
                 </div>
