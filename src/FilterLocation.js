@@ -22,6 +22,7 @@ class FilterLocation extends Component {
 
   render() {
       let input = document.getElementById("pac-input");
+      console.log(input);
       // Create the search box and link it to the UI element.
       // var searchBox = new window.google.maps.places.SearchBox(input);
       // document.map.controls[window.google.maps.ControlPosition.TOP_LEFT].push(input);
